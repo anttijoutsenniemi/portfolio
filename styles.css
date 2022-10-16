@@ -31,3 +31,9 @@ body, html {
     color: white;
     font-size: 60px;
 }
+/*Mobile*/
+@media only screen and (max-width: 480px){
+    .meimg {
+        width: 100%;
+    }
+}
