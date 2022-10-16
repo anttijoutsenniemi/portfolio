@@ -1,0 +1,33 @@
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+  }
+  .bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("banner2.png");
+    min-height: 75%;
+  }
+  .meimg{
+    float: right;
+    width: 35%;
+    padding-bottom: 5%;
+  }
+  #meitsi {
+    width: 100%;
+  }
+  .list{
+    float: left;
+    padding-bottom: 5%;
+  }
+  .menu {
+    display: none;
+  }
+  .topColumn {
+      width: 19.9999%;
+      float: left;
+  }
+  .bannerTitle {
+    color: white;
+    font-size: 60px;
+}
