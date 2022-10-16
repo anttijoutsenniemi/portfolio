@@ -11,20 +11,34 @@ body, html {
   height: 100%;
   font-family: "Inconsolata", sans-serif;
 }
-
 .bgimg {
   background-position: center;
   background-size: cover;
-  background-image: url("kuva.jpg");
+  background-image: url("banner.png");
   min-height: 75%;
 }
-
+.meimg{
+  float: right;
+  width: 35%;
+  padding-bottom: 5%;
+}
+#meitsi {
+  width: 100%;
+}
+.list{
+  float: left;
+  padding-bottom: 5%;
+}
 .menu {
   display: none;
 }
 .topColumn {
     width: 19.9999%;
     float: left;
+}
+.bannerTitle {
+  color: white;
+  font-size: 60px;
 }
 </style>
 </head>
@@ -52,26 +66,27 @@ body, html {
 </div>
 
 <!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<header class="bgimg w3-display-container" id="home">
   <div class="w3-display-middle w3-center">
-    <span class="w3-text-white" style="font-size:90px">Antti Joutsenniemi</span>
+    <span class="bannerTitle">ANTTI JOUTSENNIEMI</span>
   </div>
 </header>
 
 <!-- Add a background color and large text to the whole page -->
-<div class="w3-sand w3-grayscale w3-large">
+<div class="w3-sand w3-large">
 
 <!-- About Container -->
 <div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
+  <div class="w3-content" style="max-width:960px">
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
-    <p>
+    <p style="padding-bottom: 10%;">
         Hello and welcome to my page! I am a software developer and creative person from Finland and in this portfolio
         I have gathered many of my projects from different fields. Feel free to use the top navigation to find what
         you are looking for or scroll through the page to see all that I do!
     </p>
     <div class="w3-panel w3-leftbar w3-light-grey">
-        <h6> Who? </h6>
+        <h4> Who? </h4>
+        <div class="list">
             <ul>
                 <li>Name: Antti Joutsenniemi</li>
                 <li>Age: 23</li>
@@ -79,26 +94,42 @@ body, html {
                 <li>Hobbies: Windsurfing, Gym, Arts</li>
                 <li>Education:
                     <ul>
-                        <li>Janakkalan lukio</li>
-                        <li>Reserviupseerikoulu Hamina</li>
-                        <li>Kaakkois-Suomen ammattikorkeakoulu</li>
+                        <li>Janakkalan lukio, Ylioppilas 2018</li>
+                        <li>Reserviupseerikoulu Hamina 2019</li>
+                        <li>Kaakkois-Suomen ammattikorkeakoulu 2020-</li>
                     </ul>
                 </li>
                 <li>Email: antti.joutsenniemi@gmail.com</li>
                 <li>Phone: 044 993 1179</li>
             </ul>
+        </div>
+        <div class="meimg">
+          <img id="meitsi" src="meitsi.png">
+        </div>
+        <div class="list">
+          <h4 id="work"> Work experience </h4>
+        <ul>
+          <li>Postman, Hämeenlinnan Jakelupalvelu 2015</li>
+          <li>Summer Trainee, Lidl Suomi Ky, Turengin jakelukeskus 2015</li>
+          <li>Greenspace worker, Janakkalan seurakunta 2016, 2017, 2018</li>
+          <li>Forklift Operator, Würth Oy 2021</li>
+          <li>Forklift Operator, Huhtamäki foodservice Oy 2020, 2022</li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
 
 <!-- Coding Container -->
 <div class="w3-container" id="coding">
+  <div class="w3-content" style="max-width:960px">
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CODING</span></h5>
+  </div>
 </div>
 
 <!-- Design Container -->
 <div class="w3-container" id="design">
-  <div class="w3-content" style="max-width:700px">
+  <div class="w3-content" style="max-width:960px">
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">DESIGN</span></h5>
   </div>
 </div>
