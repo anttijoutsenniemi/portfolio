@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Antti Joutsenniemi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("kuva.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+.topColumn {
+    width: 19.9999%;
+    float: left;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="topColumn">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT ME</a>
+    </div>
+    <div class="topColumn">
+      <a href="#coding" class="w3-button w3-block w3-black">CODING</a>
+    </div>
+    <div class="topColumn">
+      <a href="#design" class="w3-button w3-block w3-black">DESIGN</a>
+    </div>
+    <div class="topColumn">
+      <a href="#arts" class="w3-button w3-block w3-black">ARTS</a>
+    </div>
+    <div class="topColumn">
+        <a href="#photography" class="w3-button w3-block w3-black">PHOTOGRAPHY & EDITING</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Antti Joutsenniemi</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+    <p>
+        Hello and welcome to my page! I am a software developer and creative person from Finland and in this portfolio
+        I have gathered many of my projects from different fields. Feel free to use the top navigation to find what
+        you are looking for or scroll through the page to see all that I do!
+    </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+        <h6> Who? </h6>
+            <ul>
+                <li>Name: Antti Joutsenniemi</li>
+                <li>Age: 23</li>
+                <li>Location: Mikkeli, Finland</li>
+                <li>Hobbies: Windsurfing, Gym, Arts</li>
+                <li>Education:
+                    <ul>
+                        <li>Janakkalan lukio</li>
+                        <li>Reserviupseerikoulu Hamina</li>
+                        <li>Kaakkois-Suomen ammattikorkeakoulu</li>
+                    </ul>
+                </li>
+                <li>Email: antti.joutsenniemi@gmail.com</li>
+                <li>Phone: 044 993 1179</li>
+            </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Coding Container -->
+<div class="w3-container" id="coding">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CODING</span></h5>
+</div>
+
+<!-- Design Container -->
+<div class="w3-container" id="design">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">DESIGN</span></h5>
+  </div>
+</div>
+
+<!-- Arts Container -->
+<div class="w3-container" id="arts" style="padding-bottom:32px;">
+    <div class="w3-content" style="max-width:700px">
+      <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ARTS</span></h5>
+    </div>
+  </div>
+
+<!-- Photography Container -->
+<div class="w3-container" id="photography">
+    <div class="w3-content" style="max-width:700px">
+      <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PHOTOGRAPHY & EDITING</span></h5>
+    </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>&copy; Antti Joutsenniemi</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
