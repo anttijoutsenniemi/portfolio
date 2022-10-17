@@ -27,10 +27,61 @@ body, html {
       width: 19.9999%;
       float: left;
   }
+  @font-face {
+    font-family: banner;
+    src: url(./opensans.ttf);
+}
   .bannerTitle {
+    font-family: banner;
     color: white;
     font-size: 60px;
 }
+.bannerTitle2 {
+    font-family: banner;
+    color: white;
+    font-size: 40px;
+}
+.infoTable {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+.infoTable td, .infoTable th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 1%;
+}
+.gallery {
+  width: 100%;
+  height: auto;
+}
+.imageHalf {
+  width: 50%;
+  float: left;
+  margin: auto;
+  padding: 3%;
+}
+.imageFull {
+  width: 100%;
+  float: left;
+  margin: auto;
+  padding: 3%;
+}
+.article {
+  padding-bottom: 5%;
+  padding-top: 5%;
+  border-bottom: 7px solid #dddddd;
+  overflow: hidden;
+}
+.article:last-child {
+  padding-bottom: 5%;
+  padding-top: 5%;
+  overflow: hidden;
+  border-bottom: 0;
+}
+
 /*Mobile*/
 @media only screen and (max-width: 480px){
     .meimg {
@@ -38,5 +89,8 @@ body, html {
     }
     .bannerTitle {
         font-size: 40px;
+    }
+    .bannerTitle2 {
+        font-size: 30px;
     }
 }
