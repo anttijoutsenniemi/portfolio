@@ -89,6 +89,20 @@ body, html {
   border-bottom: 0;
 }
 
+/*Animations*/
+@keyframes rotate { 100% { transform: rotate(90deg); }}
+@keyframes rotateBackwards { 100% { transform: rotate(0deg); }}
+@keyframes idle { 100% {} }
+
+/* The element to apply the animation to */
+.dropButton {
+  background-color: transparent;
+  border: 0;
+  width: 100px;
+  height: 200px;
+  animation-name: idle;
+}
+
 /*Mobile*/
 @media only screen and (max-width: 480px){
     .meimg {
