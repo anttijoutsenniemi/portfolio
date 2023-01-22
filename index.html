@@ -45,6 +45,15 @@
 <!-- Add a background color and large text to the whole page -->
 <div class="w3-sand w3-large">
 
+  <!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
 <!-- About Container -->
 <div class="w3-container" id="about">
   <div class="w3-content" style="max-width:960px">
@@ -152,12 +161,12 @@
           the response of the language model:
         </p>
           <div class="gallery">
-            <img class="imageFull" src="./images/openai_request.png">
+            <img class="imageFull" src="./images/openai_request.png" onclick="onClick(this)">
           </div>
         <p> Then I connected response with UI:
         </p>
         <div class="gallery">
-          <img class="imageFull" src="./images/becomechad_ss.jpg">
+          <img class="imageFull" src="./images/becomechad_ss.jpg" onclick="onClick(this)">
         </div>
         <p>App features in progress. Beta-version coming by the end of january to Google Play Store and Apple App Store.</p>
       </div>
