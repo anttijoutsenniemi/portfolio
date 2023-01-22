@@ -69,12 +69,20 @@ body, html {
   float: left;
   margin: auto;
   padding: 3%;
+  opacity: 1; /* initial opacity */
+  transition: opacity 0.5s; /* transition for smooth opacity change */ 
 }
 .imageFull {
   width: 100%;
   float: left;
   margin: auto;
   padding: 3%;
+  opacity: 1; 
+  transition: opacity 0.5s; 
+}
+.imageFull:hover, .imageHalf:hover {
+  cursor: pointer;
+  opacity: 0.5; /*Here set hover opacity*/
 }
 .article {
   padding-bottom: 5%;
