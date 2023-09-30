@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Antti Joutsenniemi | Design</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="./styles.css">
+<link rel="icon" href="./images/aj_logo.png"/>
+<script src="./script.js"></script>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top w3-black">
+  <div class="w3-row w3-black">
+    <div class="topColumn">
+      <a href="index.html" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="topColumn">
+      <a href="coding.html" class="w3-button w3-block w3-black">CODING</a>
+    </div>
+    <div class="topColumn">
+      <a href="design.html" class="w3-button w3-block w3-black">DESIGN</a>
+    </div>
+    <div class="topColumn">
+      <a href="arts.html" class="w3-button w3-block w3-black">ARTS</a>
+    </div>
+    <div class="topColumn">
+        <a href="photography.html" class="w3-button w3-block w3-black">PHOTOS</a>
+    </div>
+  </div>
+</div>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-large">
+
+  <!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Design Container -->
+<div class="w3-container" id="arts" style="margin-top: 40px;">
+  <div class="w3-content" style="max-width:960px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ARTS</span></h5>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>&copy; Antti Joutsenniemi</p>
+  <a href="index.html">
+    <img src="./images/aj_logo.png" style="width: 90px;">
+  </a>
+</footer>
+</body>
+</html>

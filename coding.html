@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Antti Joutsenniemi | Coding</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="./styles.css">
+<link rel="icon" href="./images/aj_logo.png"/>
+<script src="./script.js"></script>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top w3-black">
+  <div class="w3-row w3-black">
+    <div class="topColumn">
+      <a href="index.html" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="topColumn">
+      <a href="coding.html" class="w3-button w3-block w3-black">CODING</a>
+    </div>
+    <div class="topColumn">
+      <a href="design.html" class="w3-button w3-block w3-black">DESIGN</a>
+    </div>
+    <div class="topColumn">
+      <a href="arts.html" class="w3-button w3-block w3-black">ARTS</a>
+    </div>
+    <div class="topColumn">
+        <a href="photography.html" class="w3-button w3-block w3-black">PHOTOS</a>
+    </div>
+  </div>
+</div>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-large">
+
+  <!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+
+<!-- Coding Container -->
+<div class="w3-container" id="coding" style="margin-top: 40px;">
+  <!--<div class="dropdown">
+    <button id="codingArrow" onclick="openDropdown()" class="dropButton"><img src="./images/arrow.svg"/></button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>-->
+  <div class="w3-content" style="max-width:960px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CODING</span></h5>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <h4>Technologies I have experience with</h4>
+      <table class="infoTable">
+        <tr>
+          <td>JavaScript</td>
+          <td>HTML</td>
+          <td>CSS</td>
+        </tr>
+        <tr>
+          <td>React JS</td>
+          <td>Expo</td>
+          <td>Server side rendering</td>
+        </tr>
+        <tr>
+          <td>React Native</td>
+          <td>Express JS</td>
+          <td>EJS</td>
+        </tr>
+        <tr>
+          <td>Prisma db</td>
+          <td>PHP</td>
+          <td>WordPress</td>
+        </tr>
+        <tr>
+          <td>JWT</td>
+          <td>SQL</td>
+          <td>RWD</td>
+        </tr>
+        <tr>
+          <td>TypeScript</td>
+          <td>Node JS</td>
+          <td>React testing</td>
+        </tr>
+      </table>
+    </div>
+
+    <p style="margin-top: 40px;">This website and <a href="https://kelmiapps.github.io/home/">my company website</a> are also coded by me using W3 framework, html, css and JavaScript.</p>
+      <!--BecomeChad -- Open AI -->
+      <div class="article" id="openai">
+        <h3><b>BecomeChad  &nbsp; | &nbsp; Open AI API</b> </h3>
+        <h5>[ React, OpenAI, Mobile-app ]</h5>
+        <p>I used OpenAI API to create a fitness AI coach Chad in my new upcoming app.</p>
+        <p>First I created an API key in <a href="https://beta.openai.com/docs/introduction">Open AI api.</a> Then I used that key in a function that sends a request to the API and returns a json-object containing data about
+          the response of the language model:
+        </p>
+          <div class="gallery">
+            <img class="imageFull" src="./images/openai_request.png" onclick="onClick(this)">
+          </div>
+        <p> Then I connected response with UI:
+        </p>
+        <div class="gallery">
+          <img class="imageFull" src="./images/openai_ss.png" onclick="onClick(this)">
+        </div>
+        <p>Available in app stores. Links in article below.</p>
+      </div>
+
+    <!--BecomeChad-->
+    <div class="article" >
+      <h3><b>BecomeChad 2023</b> [ React, TypeScript, Mobile-app ]</h3>
+      <p>BecomeChad is a self-improvement application that makes your life into a video game.
+        You choose what you want to improve and your virtual coach gives you quests ranging from fitness exercises to habit, mind, and social improvement tasks. 
+      </p>
+      <p>The app has a ton of features including progressive and scalable workout plan, improvement tracking and a virtual coach.
+      </p>
+      <div class="gallery">
+        <img class="imageFull" src="./images/kaikki.png" onclick="onClick(this)">
+      </div>
+      <p>All ads, images and design also done by me
+      </p>
+      <div class="gallery">
+        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.kelmiapps.BecomeChadPro"><img class="imageHalf" src="./images/play_store.png"></a>
+        <a target="_blank" href="https://apps.apple.com/fi/app/becomechad-pro/id1670871109?l=fi"><img class="imageHalf" src="./images/app_store.png"></a>
+      </div>
+    </div>
+  <!--Verse generator-->
+    <div class="article">
+      <h3><b>Verse Generator 2022</b> [ Typescript, React Native, Mobile-app ]</h3>
+      <p><a href="https://github.com/anttijoutsenniemi/versegenerator">GitHub link</a></p>
+      <p><a href="https://play.google.com/store/apps/details?id=com.antti.versegen">Live on Google Play Store</a></p>
+      <p>
+        Verse Generator is a mobile-app for songwriters, rappers, poemwriters etc.
+        In it you can write a song and find rhyming word suggestions for any word.
+        Features include autosaving written verses, saving on file, editing, deleting,
+        user affirmations, switching language and database etc.
+      </p>
+      <div class="gallery">
+        <img class="imageHalf" onclick="onClick(this)" src="./images/verse1.jpeg">
+        <img class="imageHalf" onclick="onClick(this)" src="./images/verse2.jpeg">
+      </div>
+    </div>
+  <!--Server side rendering-->
+    <div class="article">
+      <h3><b>Server side rendering 2022</b> [ TypeScript, EJS, Prisma ]</h3>
+      <p><a href="https://gitfront.io/r/user-6751503/4w92SgutqhNn/server-side-rendering/">GitFront link</a></p>
+      <p>To copy the project, install it with "npm install" and start it with "npm start"
+        It will start on localhost port 3011. (You can click it open from console after 
+        starting with ctrl + click)
+      </p>
+      <p>
+        This app uses the JSON-file of Finlands municipalities to render an EJS view on the
+        Express JS-server. Features include search bar, some stats about the view that is shown and
+        alphabetical sorting with names or numerical sorting with amount of people.
+      </p>
+      <p>The app does not need JavaScript on the browser side to run and all of the sites
+        html-content is shown in the source code.
+      </p>
+      <div class="gallery">
+        <img class="imageFull" onclick="onClick(this)" src="./images/ejs1.PNG">
+        <img class="imageFull" onclick="onClick(this)" src="./images/ejs2.PNG">
+      </div>
+    </div>
+  <!--Meedio-->
+    <div class="article">
+      <h3><b>Meedio 2020</b> [ JavaScript, HTML, CSS, RWD ]</h3>
+      <p><a href="https://anttijoutsenniemi.github.io/Meedio/">Live deployment</a></p>
+      <p>Source code visible by inspecting</p>
+      <p>
+        Meedio is one of my first projects learning any kind of coding so the code is beginner
+        kinda messy. It answers whatever question the user asks in finnish. All the visuals are
+        done with Microsoft Paint on an old laptop since I did not have any of the Adobe software
+        or knowledge how to use them at the time. It is also responsive and has features like
+        settings, mouse hovers, clicking Meedio, Enter to send, Empty field etc.
+      </p>
+      <div class="gallery">
+        <img class="imageFull" onclick="onClick(this)" src="./images/meedio.PNG">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>&copy; Antti Joutsenniemi</p>
+  <img src="./images/aj_logo.png" style="width: 90px;">
+</footer>
+</body>
+</html>

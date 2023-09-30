@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Antti Joutsenniemi | Design</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="./styles.css">
+<link rel="icon" href="./images/aj_logo.png"/>
+<script src="./script.js"></script>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top w3-black">
+  <div class="w3-row w3-black">
+    <div class="topColumn">
+      <a href="index.html" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="topColumn">
+      <a href="coding.html" class="w3-button w3-block w3-black">CODING</a>
+    </div>
+    <div class="topColumn">
+      <a href="design.html" class="w3-button w3-block w3-black">DESIGN</a>
+    </div>
+    <div class="topColumn">
+      <a href="arts.html" class="w3-button w3-block w3-black">ARTS</a>
+    </div>
+    <div class="topColumn">
+        <a href="photography.html" class="w3-button w3-block w3-black">PHOTOS</a>
+    </div>
+  </div>
+</div>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-large">
+
+  <!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Design Container -->
+<div class="w3-container" id="design" style="margin-top: 40px;">
+  <div class="w3-content" style="max-width:960px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">DESIGN</span></h5>
+<!--CTS logo-->
+    <div class="article">
+      <h3><b>CTS-logo 2022</b> [ Adobe Illustrator ]</h3>
+        <p>A logo bundle consisting of different versions of logos in various formats that I made
+          for the physiotherapy concept CTS <a href="https://www.ctsrehab.fi/">Link to their website</a> 
+        </p>
+        <div class="gallery">
+          <img class="imageHalf" onclick="onClick(this)" src="./images/cts_basic.png">
+          <img class="imageHalf" onclick="onClick(this)" src="./images/cts_rehab_musta_pieni.png">
+        </div>
+    </div>
+<!--Vine etiquette-->
+    <div class="article">
+      <h3><b>Wine etiquette 2022</b> [ Adobe Illustrator ]</h3>
+      <br>
+      <div class="gallery">
+        <img  
+          style="width: 70%; margin-left: auto; margin-right: auto; display: block;" 
+          src="./images/chien_noir.png"
+          onclick="onClick(this)"
+        >
+      </div>
+    </div>
+<!--BecomeChad designs-->
+    <div class="article">
+      <h3><b>BecomeChad designs 2023</b> [ Adobe Illustrator ]</h3>
+      <br>
+      <div class="gallery">
+        <img class="imageHalf" onclick="onClick(this)" src="./images/kelmi_bc.png">
+        <img class="imageHalf" onclick="onClick(this)" src="./images/coach_empty.png">
+        <p style="float: left; width: 40%; margin-right: 5%; margin-left: 5%;">My company logo Kelmi Apps and underneath BecomeChad logo</p>
+        <p style="float: left; width: 40%; margin-right: 5%; margin-left: 5%;">Virtual coach Chad</p>
+      </div>
+    </div>
+<!--Verse Generator logo-->
+    <div class="article">
+      <h3><b>VerseGenerator logo 2022</b> [ Adobe Illustrator ]</h3>
+      <br>
+      <div class="gallery">
+        <img  
+          style="width: 70%; margin-left: auto; margin-right: auto; display: block;" 
+          src="./images/icon.png"
+          onclick="onClick(this)"
+        >
+      </div>
+    </div>
+<!--3D-house-->
+    <div class="article">
+      <h3><b>3D-model of a house 2021</b> [ Sketchup ]</h3>
+      <div class="gallery">
+        <img class="imageFull" onclick="onClick(this)" src="./images/lautalo.png">
+        <img class="imageFull" onclick="onClick(this)" src="./images/leikkaus.png">
+        <img class="imageFull" onclick="onClick(this)" src="./images/pohjapiirrustus.png">
+        <img class="imageFull" onclick="onClick(this)" src="./images/portaikko.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>&copy; Antti Joutsenniemi</p>
+  <a href="index.html">
+    <img src="./images/aj_logo.png" style="width: 90px;">
+  </a>
+</footer>
+</body>
+</html>
